@@ -108,6 +108,13 @@ backend nodes
     # http://cbonte.github.io/haproxy-dconv/configuration-1.5.html#4-server
     # HANDLEBARS START
     # TODO: [CFG] Remove all the servers
+    
+    server 855e8a9d387f 172.18.0.4:3000 check
+    
+    server 8e1022d48076 172.18.0.5:3000 check
+    
+    server 92a3b6718546 172.18.0.3:3000 check
+    
     # HANDLEBARS END
 
 # Other links you will need later for this lab
