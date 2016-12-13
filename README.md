@@ -80,7 +80,7 @@ The goal of this lab is to understand how to configure a dynamic scaling environ
 1.	Take a screenshot of the stats page of HAProxy at http://192.168.42.42:1936. You should see your backend nodes.
 	
 	**Answer**
-	![HAProxy Statistics Report](assets/img/task01.jpg) 
+	![HAProxy Statistics Report](assets/img/task01.jpeg) 
 2.	Give the URL of your repository URL in the lab report.
 	
 	**Answer**
@@ -92,7 +92,7 @@ The goal of this lab is to understand how to configure a dynamic scaling environ
 1. Take a screenshot of the stats page of HAProxy at <http://192.168.42.42:1936>. You should see your backend nodes. It should be really similar to the screenshot of the previous task.
 
 	**Answer**
-	![HAProxy Statistics Report](assets/img/task11)
+	![HAProxy Statistics Report](assets/img/task11.jpeg)
 	
 2. Describe your difficulties for this task and your understanding of what is happening during this task. Explain in your own words why are we installing a process supervisor. Do not hesitate to do more research and to find more articles on that topic to illustrate the problem.
 
@@ -236,10 +236,10 @@ The goal of this lab is to understand how to configure a dynamic scaling environ
    Also provide the output of `docker ps` in a log file. At least one file is expected. You can provide one output per step of your experimentation according to your screenshots.
    
    **HAProxy managing 3 nodes**
-   ![HAProxy stat page](/assets/img/task61)
+   ![HAProxy stat page](/assets/img/task61.jpeg)
    
    **HAProxy managing 2 nodes after a node has been removed**
-   ![HAProxy stat page](/assets/img/task62)
+   ![HAProxy stat page](/assets/img/task62.jpeg)
    
 2. Give your own feelings about the final solution. Propose improvements or ways to do the things differently. If any, provide references to your readings for the improvements.
 
