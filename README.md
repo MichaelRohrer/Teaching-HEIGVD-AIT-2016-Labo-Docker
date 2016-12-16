@@ -259,6 +259,8 @@ The goal of this lab is to understand how to configure a dynamic scaling environ
    
 2. Give your own feelings about the final solution. Propose improvements or ways to do the things differently. If any, provide references to your readings for the improvements.
 
+	**Answer**
+
 	This solution works pretty well but it is not sophisticate enough to be used on a real cluster that has to be reachable 99.99999 % of the time. Indeed, when a node is added or removed, our template engine take some time to build the new configuration and to load it on the load balancer that need to restart. It results a little loss of availability that could be significant depending on what the cluster is used for. To improve our solution, we could configure HAProxy to reloads with zero down time. We can do this by delaying SYN packets for the duration of the HAProxy restart so that TCP automatically recovers and as that, it would only impose the latency of the HAProxy reload on new connections. 
 	
 	You can see how it works on this [link](https://engineeringblog.yelp.com/2015/04/true-zero-downtime-haproxy-reloads.html).
