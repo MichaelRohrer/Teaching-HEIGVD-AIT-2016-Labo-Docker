@@ -92,6 +92,7 @@ The goal of this lab is to understand how to configure a dynamic scaling environ
 	**Answer**
 	
 	[Link: https://github.com/MichaelRohrer/Teaching-HEIGVD-AIT-2016-Labo-Docker](https://github.com/MichaelRohrer/Teaching-HEIGVD-AIT-2016-Labo-Docker) 
+
 ### <a name="task-1"></a>Task 1: Add a process supervisor to run several processes
 
 **Deliverables**:
@@ -109,6 +110,7 @@ The goal of this lab is to understand how to configure a dynamic scaling environ
 	To solve this task, we have had no particular difficulties. 
 	
 	In this task, we have installed a process supervisor to bypass the limitation of docker to run only one process in one container. We have done that because we had to install additional tool to manage our node automatically which mean that several process, like the web application and the *Serf* agent, has to run on it.	
+
 ### <a name="task-2"></a>Task 2: Add a tool to manage membership in the web server cluster
 
 **Deliverables**:
