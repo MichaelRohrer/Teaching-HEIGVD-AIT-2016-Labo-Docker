@@ -218,9 +218,9 @@ The goal of this lab is to understand how to configure a dynamic scaling environ
 
 	**Answer**
 	
-	- [HA inside logs before s1 s2 started](./logs/task4/ha_inside_log_before_s1_s2_starts)
-	- [HA inside logs after s1 started](./logs/task4/ha_inside_log_after_s1_starts)
-	- [HA inside logs after s1 s2 started](./logs/task4/ha_inside_log_after_s1_s2_starts)
+	- [HA config file before s1 s2 started](./logs/task4/ha_inside_log_before_s1_s2_starts)
+	- [HA config file after s1 started](./logs/task4/ha_inside_log_after_s1_starts)
+	- [HA config file after s1 s2 started](./logs/task4/ha_inside_log_after_s1_s2_start)
 	
    In addition, provide a log file containing the output of the `docker ps` console and another file (per container) with `docker inspect <container>`. Four files are expected.
    
