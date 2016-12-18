@@ -120,11 +120,11 @@ The goal of this lab is to understand how to configure a dynamic scaling environ
 
    **Answer**
    
-   - [Logs for ha](./logs/task2/ha.txt)  
+   - [Logs for ha](./logs/task2/ha)  
 
-	- [Logs for s1](./logs/task2/s1.txt)
+	- [Logs for s1](./logs/task2/s1)
 
-	- [Logs for s2](./logs/task2/s2.txt)    
+	- [Logs for s2](./logs/task2/s2)    
 
 
 2. Give the answer to the question about the existing problem with the current solution.
@@ -154,21 +154,21 @@ The goal of this lab is to understand how to configure a dynamic scaling environ
 
 	**Answer**
 	
-  - [Logs from ha before s1 s2 started](./logs/task3/ha_before_s1_s2_starts.txt)
+  - [Logs from ha before s1 s2 started](./logs/task3/ha_before_s1_s2_starts)
    
-  - [Logs from ha after s1 started](./logs/task3/ha_after_s1_starts.txt)
+  - [Logs from ha after s1 started](./logs/task3/ha_after_s1_starts)
 
-  - [Logs from ha after s2 started](./logs/task3/ha_after_s2_starts.txt)
+  - [Logs from ha after s2 started](./logs/task3/ha_after_s2_starts)
 
-  - [Logs from s1](./logs/task3/s1.txt)
+  - [Logs from s1](./logs/task3/s1)
 
-  - [Logs from s2](./logs/task3/s2.txt)
+  - [Logs from s2](./logs/task3/s2)
 
 3. Provide the logs from the `ha` container gathered directly from the `/var/log/serf.log` file present in the container. Put the logs in the `logs` directory in your repo.
 
 	**Answer**
 	
-	- [Logs from ha](./logs/task3/ha_inside_logs.txt) 
+	- [Logs from ha](./logs/task3/ha_inside_logs) 
 	
    
 ### <a name="task-4"></a>Task 4: Use a template engine to easily generate configuration files
@@ -218,18 +218,18 @@ The goal of this lab is to understand how to configure a dynamic scaling environ
 
 	**Answer**
 	
-	- [HA inside logs before s1 s2 started](./logs/task4/ha_inside_log_before_s1_s2_starts.txt)
-	- [HA inside logs after s1 started](./logs/task4/ha_inside_log_after_s1_starts.txt)
-	- [HA inside logs after s1 s2 started](./logs/task4/ha_inside_log_after_s1_s2_starts.txt)
+	- [HA inside logs before s1 s2 started](./logs/task4/ha_inside_log_before_s1_s2_starts)
+	- [HA inside logs after s1 started](./logs/task4/ha_inside_log_after_s1_starts)
+	- [HA inside logs after s1 s2 started](./logs/task4/ha_inside_log_after_s1_s2_starts)
 	
    In addition, provide a log file containing the output of the `docker ps` console and another file (per container) with `docker inspect <container>`. Four files are expected.
    
    **Answer**
    
-   - [docker ps](./logs/task4/docker_ps.txt)
-   - [docker inspect ha](./logs/task4/docker_inspect_ha.txt)
-   - [docker inspect s1](./logs/task4/docker_inspect_s1.txt)
-   - [docker inspect s2](./logs/task4/docker_inspect_s2.txt)
+   - [docker ps](./logs/task4/docker_ps)
+   - [docker inspect ha](./logs/task4/docker_inspect_ha)
+   - [docker inspect s1](./logs/task4/docker_inspect_s1)
+   - [docker inspect s2](./logs/task4/docker_inspect_s2)
    
 4. Based on the three output files you have collected, what can you say about the way we generate it? What is the problem if any?
 
@@ -244,37 +244,37 @@ The goal of this lab is to understand how to configure a dynamic scaling environ
 1. Provide the file `/usr/local/etc/haproxy/haproxy.cfg` generated in the `ha` container after each step. Three files are expected.
 
 	**Answer**
-	- [HA config file before s1 s2 starts](./logs/task5/ha_inside_log_before_s1_s2_starts.txt)
-	- [HA config file after s1 starts](./logs/task5/ha_inside_log_after_s1_starts.txt)
-	- [HA config file after s1 s2 starts](./logs/task5/ha_inside_log_after_s1_s2_starts.txt)
+	- [HA config file before s1 s2 starts](./logs/task5/ha_inside_log_before_s1_s2_starts)
+	- [HA config file after s1 starts](./logs/task5/ha_inside_log_after_s1_starts)
+	- [HA config file after s1 s2 starts](./logs/task5/ha_inside_log_after_s1_s2_starts)
  
    In addition, provide a log file containing the output of the `docker ps` console and another file (per container) with `docker inspect <container>`. Four files are expected.
    
   **Answer**
    
-  - [docker ps](./logs/task5/docker_ps.txt)
-  - [docker inspect ha](./logs/task5/docker_inspect_ha.txt)
-  - [docker inspect s1](./logs/task5/docker_inspect_s1.txt)
-  - [docker inspect s2](./logs/task5/docker_inspect_s2.txt)
+  - [docker ps](./logs/task5/docker_ps)
+  - [docker inspect ha](./logs/task5/docker_inspect_ha)
+  - [docker inspect s1](./logs/task5/docker_inspect_s1)
+  - [docker inspect s2](./logs/task5/docker_inspect_s2)
    
 2. Provide the list of files from the `/nodes` folder inside the `ha` container. One file expected with the command output.
 
 	**Answer**
 	
-	- [List of file from the node folder](./logs/task5/node_output.txt)
+	- [List of file from the node folder](./logs/task5/node_output)
 
 3. Provide the configuration file after you stopped one container and the list of nodes present in the `/nodes` folder. One file expected with the command output. Two files are expected.
 
 	**Answer**
 	
-	- [HA config file after s2 stops](./logs/task5/ha_inside_after_s2_stops.txt)
-	- [List of file from the node folder](./logs/task5/node_output_after_s2_stops.txt)
+	- [HA config file after s2 stops](./logs/task5/ha_inside_after_s2_stops)
+	- [List of file from the node folder](./logs/task5/node_output_after_s2_stops)
    
    In addition, provide a log file containing the output of the `docker ps` console. One file expected.
     
    **Answer**
     
-   - [docker ps](./logs/task5/docker_ps_after_s2_stops.txt)
+   - [docker ps](./logs/task5/docker_ps_after_s2_stops)
 
 ### <a name="task-6"></a>Task 6: Make the load balancer automatically reload the new configuration
 
@@ -286,12 +286,12 @@ The goal of this lab is to understand how to configure a dynamic scaling environ
    
    **Answer**
    
-   - [Docker ps after s1 s2 s3 start](./logs/task6/docker_ps_s1_s2_s3_starts.txt)
-   - [HA config file after s1 s2 s3 start](./logs/task6/ha_inside_log_s1_s2_s3_starts.txt)
-   - [List of file from the node folder after s1 s2 s3 start](./logs/task6/nodes_s1_s2_s3_starts.txt)
-   - [Docker ps after s3 stops](./logs/task6/docker_ps_after_s3_stops.txt)
-   - [HA config file after s3 stops](./logs/task6/ha_inside_log_after_s3_stops.txt)
-   - [List of file from the node folder after s3 stops](./logs/task6/nodes_after_s3_stops.txt)
+   - [Docker ps after s1 s2 s3 start](./logs/task6/docker_ps_s1_s2_s3_starts)
+   - [HA config file after s1 s2 s3 start](./logs/task6/ha_inside_log_s1_s2_s3_starts)
+   - [List of file from the node folder after s1 s2 s3 start](./logs/task6/nodes_s1_s2_s3_starts)
+   - [Docker ps after s3 stops](./logs/task6/docker_ps_after_s3_stops)
+   - [HA config file after s3 stops](./logs/task6/ha_inside_log_after_s3_stops)
+   - [List of file from the node folder after s3 stops](./logs/task6/nodes_after_s3_stops)
    
    **HAProxy managing 3 nodes**
    
